@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SambavaFit - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            Sambava<span>Fit</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="cours.html">Les cours</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Contactez-nous</h1>
+        <p>Une question, une inscription ? Écrivez-nous ou passez au club.</p>
+    </section>
+
+    <main class="contact-container">
+
+        <section class="formulaire-contact">
+            <h2>Envoyez-nous un message</h2>
+
+            <form action="#" method="post">
+
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom"
+                       placeholder="Votre nom" required>
+
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email"
+                       placeholder="vous@exemple.com" required>
+
+                <label for="formule">Formule choisie</label>
+                <select id="formule" name="formule">
+                    <option>Mensuel</option>
+                    <option>Trimestriel</option>
+                    <option>Annuel</option>
+                </select>
+
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message"
+                          placeholder="Écrivez votre message ici..."
+                          rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+        </section>
+
+        <aside class="informations-contact">
+            <h2>Venez nous voir</h2>
+            <p>Rue principale, Sambava</p>
+            <p>Tél : 034 00 00 00</p>
+            <p>contact@sambavafit.example</p>
+
+            <h3>Horaires</h3>
+            <div class="horaire">
+                <span>Lundi - Vendredi</span>
+                <span>5h30 - 20h30</span>
+            </div>
+            <div class="horaire">
+                <span>Samedi</span>
+                <span>7h00 - 18h00</span>
+            </div>
+            <div class="horaire">
+                <span>Dimanche</span>
+                <span>Fermé</span>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 SambavaFit - Sambava, région SAVA</p>
+    </footer>
+</body>
+</html>

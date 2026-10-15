@@ -1,0 +1,493 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #101729;
+    color: white;
+    padding: 15px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #101729, #233f85);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101729;
+    padding: 12px 20px;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff781f;
+}
+
+/* Liens du menu */
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Grande bannière d'accueil */
+.hero {
+    background: linear-gradient(120deg, #101729, #233f85);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+/* Groupe des boutons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Style commun des boutons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Bouton orange */
+.btn-primary {
+    background-color: #ff781f;
+    color: white;
+}
+
+/* Bouton avec contour */
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Section des avantages */
+.avantages {
+    background-color: #f8fafc;
+    padding: 30px 20px;
+}
+
+.avantages h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Trois colonnes */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* Apparence des cartes */
+.carte {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Bande des statistiques */
+.statistiques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background-color: #f97316;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 24px;
+    margin: 0 0 5px;
+}
+
+.stat p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Section des formules */
+.formules {
+    background-color: #f8fafc;
+    padding: 30px 20px;
+}
+
+.formules > h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Cartes de tarifs */
+.tarif {
+    text-align: center;
+}
+
+.tarif h2 {
+    color: #f97316;
+    font-size: 22px;
+    margin: 12px 0 5px;
+}
+
+.tarif p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Formule mise en évidence */
+.populaire {
+    border: 2px solid #f97316;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #101729;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Numéros sur les cartes */
+.avantages .carte {
+    position: relative;
+}
+
+.avantages .carte h3::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    margin-bottom: 10px;
+    background-color: #f97316;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.avantages .carte:nth-child(1) h3::before {
+    content: "1";
+}
+
+.avantages .carte:nth-child(2) h3::before {
+    content: "2";
+}
+
+.avantages .carte:nth-child(3) h3::before {
+    content: "3";
+}
+
+/* Section planning de la semaine */
+.planning {
+    padding: 25px 10px;
+    background-color: #ffffff;
+}
+
+.planning h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #101729;
+    margin-bottom: 20px;
+}
+
+.planning table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+/* En-tête du tableau */
+.planning thead {
+    background-color: #101729;
+    color: #ffffff;
+}
+
+.planning th {
+    padding: 12px 10px;
+    text-align: left;
+}
+
+/* Cellules du tableau */
+.planning td {
+    padding: 10px;
+    color: #334155;
+}
+
+/* Couleur alternée des lignes */
+.planning tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+.planning tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Section Nos disciplines */
+.disciplines {
+    padding: 30px 10px;
+    background-color: #ffffff;
+}
+
+.disciplines h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #101729;
+    margin-bottom: 25px;
+}
+
+/* Grille des quatre cartes */
+.grille-disciplines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* Apparence de chaque carte */
+.carte-discipline {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Bandeaux colorés */
+.bandeau {
+    height: 80px;
+}
+
+.musculation {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+}
+
+.cardio {
+    background: linear-gradient(135deg, #be123c, #f43f5e);
+}
+
+.danse {
+    background: linear-gradient(135deg, #9333ea, #c084fc);
+}
+
+.boxe {
+    background: linear-gradient(135deg, #b45309, #fbbf24);
+}
+
+/* Texte à l'intérieur des cartes */
+.contenu-carte {
+    padding: 12px;
+}
+
+.contenu-carte h3 {
+    font-size: 14px;
+    color: #101729;
+    margin-bottom: 8px;
+}
+
+.contenu-carte p {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Liens des cartes */
+.contenu-carte a {
+    display: inline-block;
+    background-color: #ffedd5;
+    color: #ea580c;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 5px 9px;
+    border-radius: 12px;
+}
+@media (max-width: 480px) {
+    .grille-disciplines {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Page Contact */
+.contact-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: #f8fafc;
+    align-items: start;
+}
+
+.formulaire-contact,
+.informations-contact {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.formulaire-contact h2,
+.informations-contact h2 {
+    font-size: 18px;
+    color: #101729;
+    margin-bottom: 20px;
+}
+
+.formulaire-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire-contact label {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0 6px;
+    color: #334155;
+}
+
+.formulaire-contact input,
+.formulaire-contact select,
+.formulaire-contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #dbe3ef;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.formulaire-contact textarea {
+    resize: vertical;
+}
+
+.formulaire-contact button {
+    align-self: flex-start;
+    margin-top: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f97316;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.informations-contact p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.informations-contact h3 {
+    color: #101729;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.horaire {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.footer {
+    background-color: #101729;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 11px;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 600px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 20px 12px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 10px;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 35px 12px;
+    }
+
+    .hero h1 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
