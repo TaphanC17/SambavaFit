@@ -2,7 +2,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
+* {
+    box-sizing: border-box;
+}
 .navbar {
     background-color: #101729;
     color: white;
